@@ -1,0 +1,35 @@
+/* Mengatur font dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Mengatur Banner Utama (Hero) */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://upload.wikimedia.org/wikipedia/commons/9/97/Prambanan_Temple_Yogyakarta_Indonesia.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: -1px;
+}
+
+/* Mengatur Gambar di Kartu */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* Agar scroll ke peta terasa halus */
+html {
+    scroll-behavior: smooth;
+}

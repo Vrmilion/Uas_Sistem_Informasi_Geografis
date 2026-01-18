@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jejak Sejarah Jawa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🏛️ Jejak Sejarah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#daftar-bangunan">Daftar Bangunan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#peta-lokasi">Peta Utama</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Warisan Sejarah Pulau Jawa</h1>
+            <p class="lead">Menelusuri jejak peradaban dari masa ke masa.</p>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6">
+                    <input type="text" id="searchInput" class="form-control p-3 rounded-pill shadow" placeholder="Cari bangunan (cth: Lawang Sewu)...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5" id="daftar-bangunan">
+        <h2 class="text-center mb-5 fw-bold border-bottom pb-2 d-inline-block">Destinasi Populer</h2>
+        
+        <div class="row g-4" id="buildingList">
+            
+            <div class="col-md-4 building-item">
+                <div class="card h-100 shadow border-0 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Borobudur">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Jawa Tengah</span>
+                        <h5 class="card-title fw-bold">Candi Borobudur</h5>
+                        <p class="card-text text-muted">Candi Buddha terbesar di dunia, warisan wangsa Syailendra abad ke-9.</p>
+                        <button class="btn btn-primary w-100 btn-peta" 
+                                data-map="https://maps.google.com/maps?q=Candi+Borobudur&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            📍 Lihat di Peta
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 building-item">
+                <div class="card h-100 shadow border-0 overflow-hidden">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gedung_Sate_Oktober_2024_-_Rahmatdenas.jpg/960px-Gedung_Sate_Oktober_2024_-_Rahmatdenas.jpg" class="card-img-top" alt="Gedung Sate">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Jawa Barat</span>
+                        <h5 class="card-title fw-bold">Gedung Sate</h5>
+                        <p class="card-text text-muted">Ikon kota Bandung era kolonial dengan ornamen tusuk sate.</p>
+                        <button class="btn btn-primary w-100 btn-peta" 
+                                data-map="https://maps.google.com/maps?q=Gedung+Sate+Bandung&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            📍 Lihat di Peta
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 building-item">
+                <div class="card h-100 shadow border-0 overflow-hidden">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Lawang_sewu_semarang.jpg" class="card-img-top" alt="Lawang Sewu">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Jawa Tengah</span>
+                        <h5 class="card-title fw-bold">Lawang Sewu</h5>
+                        <p class="card-text text-muted">Bekas kantor kereta api NIS Semarang yang terkenal dengan ribuan pintunya.</p>
+                        <button class="btn btn-primary w-100 btn-peta" 
+                                data-map="https://maps.google.com/maps?q=Lawang+Sewu&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            📍 Lihat di Peta
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 building-item">
+                <div class="card h-100 shadow border-0 overflow-hidden">
+                    <img src="https://upload.wikimedia.org/wikipedia/id/thumb/b/b1/Merdeka_Square_Monas_02.jpg/960px-Merdeka_Square_Monas_02.jpg" class="card-img-top" alt="Monas">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">DKI Jakarta</span>
+                        <h5 class="card-title fw-bold">Monumen Nasional</h5>
+                        <p class="card-text text-muted">Simbol perjuangan kemerdekaan RI yang terletak di pusat Jakarta.</p>
+                        <button class="btn btn-primary w-100 btn-peta" 
+                                data-map="https://maps.google.com/maps?q=Monas+Jakarta&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            📍 Lihat di Peta
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 building-item">
+                <div class="card h-100 shadow border-0 overflow-hidden">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eksotika_Candi_Bajang_Ratu.jpg/960px-Eksotika_Candi_Bajang_Ratu.jpg" class="card-img-top" alt="Trowulan">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Jawa Timur</span>
+                        <h5 class="card-title fw-bold">Situs Trowulan</h5>
+                        <p class="card-text text-muted">Bekas ibukota Kerajaan Majapahit dengan banyak candi bata merah.</p>
+                        <button class="btn btn-primary w-100 btn-peta" 
+                                data-map="https://maps.google.com/maps?q=Candi+Tikus+Trowulan&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            📍 Lihat di Peta
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-light py-5" id="peta-lokasi">
+        <div class="container text-center">
+            <h3 class="mb-4">Lokasi di Pulau Jawa</h3>
+            <p class="text-muted">Klik tombol <b>"📍 Lihat di Peta"</b> di atas untuk melihat detail lokasi.</p>
+            <div class="ratio ratio-21x9 shadow rounded overflow-hidden">
+                <iframe id="mapFrame" 
+                        src="https://maps.google.com/maps?q=Java,Indonesia&t=&z=7&ie=UTF8&iwloc=&output=embed" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2024 Jejak Sejarah Jawa.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
